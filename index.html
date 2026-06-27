@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fotografia Joaquim Oliveira · Posters & Livro de Fotografia</title>
+  <meta name="description" content="Fotografia de autor por Joaquim Oliveira. Posters à venda e um livro de fotografia de edição limitada. A luz certa, o instante exato." />
+  <meta name="theme-color" content="#14110f" />
+
+  <!-- Open Graph (partilha em redes sociais) -->
+  <meta property="og:title" content="Fotografia Joaquim Oliveira" />
+  <meta property="og:description" content="Posters à venda e um livro de fotografia de edição limitada." />
+  <meta property="og:image" content="assets/images/hero.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon monograma JO -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2314110f'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='52' fill='%23b18f5e' text-anchor='middle'%3EJO%3C/text%3E%3C/svg%3E" />
+
+  <!-- Tipografia -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__mark">JO</div>
+    <div class="preloader__bar"><span></span></div>
+  </div>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="brand" aria-label="Início">
+        <span class="brand__mark">JO</span>
+        <span class="brand__text">
+          <strong>Joaquim Oliveira</strong>
+          <small>Fotografia</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <a href="#home" class="nav__link">Início</a>
+        <a href="#sobre" class="nav__link">Sobre</a>
+        <a href="#portfolio" class="nav__link">Galeria</a>
+        <a href="#loja" class="nav__link">Posters</a>
+        <a href="#album" class="nav__link">Livro</a>
+        <a href="#contacto" class="nav__link">Contacto</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Abrir carrinho">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 7h12l-1 13H7L6 7Z" stroke-linejoin="round"/>
+            <path d="M9 7a3 3 0 0 1 6 0" stroke-linecap="round"/>
+          </svg>
+          <span class="cart-btn__count" id="cartCount">0</span>
+        </button>
+        <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero__bg" id="heroBg"></div>
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <p class="eyebrow eyebrow--light reveal">Fotografia de autor</p>
+      <h1 class="hero__title reveal">
+        A luz certa,<br><em>o instante exato.</em>
+      </h1>
+      <p class="hero__lead reveal">
+        Fotografia de autor em posters para a sua parede — e, em breve,
+        reunida num livro de fotografia de edição limitada. Arte pronta a emoldurar.
+      </p>
+      <div class="hero__cta reveal">
+        <a href="#loja" class="btn btn--solid">Comprar posters</a>
+        <a href="#album" class="btn btn--ghost">O livro</a>
+      </div>
+    </div>
+    <a href="#sobre" class="hero__scroll" aria-label="Descer">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Posters</span><i>✶</i><span>Retratos</span><i>✶</i><span>Paisagem</span><i>✶</i>
+      <span>Livro de Fotografia</span><i>✶</i><span>Edições Limitadas</span><i>✶</i>
+      <span>Posters</span><i>✶</i><span>Retratos</span><i>✶</i><span>Paisagem</span><i>✶</i>
+      <span>Livro de Fotografia</span><i>✶</i><span>Edições Limitadas</span><i>✶</i>
+    </div>
+  </div>
+
+  <!-- ============ SOBRE ============ -->
+  <section class="about section" id="sobre">
+    <div class="container about__grid">
+      <div class="about__media reveal">
+        <img src="assets/images/about.jpg" alt="Joaquim Oliveira, fotógrafo" />
+        <div class="about__badge">
+          <strong>+10</strong>
+          <span>anos a fotografar</span>
+        </div>
+      </div>
+      <div class="about__text">
+        <p class="eyebrow reveal">Sobre</p>
+        <h2 class="section__title reveal">Cada fotografia<br>conta uma história.</h2>
+        <p class="reveal">
+          Sou o Joaquim Oliveira. Há mais de uma década que procuro a luz que revela
+          a verdade de cada momento — no olhar de um retrato, na calma de uma paisagem,
+          na poesia das pequenas coisas. Não fotografo cenas; guardo memórias.
+        </p>
+        <p class="reveal">
+          Cada imagem aqui apresentada pode tornar-se um poster para a sua parede,
+          impresso com qualidade para durar. E, em breve, reúno o melhor deste percurso
+          num livro de fotografia de edição limitada.
+        </p>
+        <div class="stats reveal">
+          <div class="stat"><strong data-count="500">0</strong><span>fotografias</span></div>
+          <div class="stat"><strong data-count="15">0</strong><span>prémios & menções</span></div>
+        </div>
+        <a href="#loja" class="btn btn--dark reveal">Comprar posters</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PORTFÓLIO ============ -->
+  <section class="portfolio section section--alt" id="portfolio">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow reveal">Galeria</p>
+        <h2 class="section__title reveal">A coleção</h2>
+        <p class="section__sub reveal">Cada fotografia está à venda em poster — adicione direto ao carrinho, ou clique para ampliar e escolher o tamanho.</p>
+      </div>
+
+      <div class="filters reveal" id="filters" role="tablist" aria-label="Filtrar galeria"></div>
+
+      <div class="gallery" id="gallery"></div>
+    </div>
+  </section>
+
+  <!-- ============ LOJA ============ -->
+  <section class="shop section" id="loja">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow reveal">Posters</p>
+        <h2 class="section__title reveal">Posters para a sua parede</h2>
+        <p class="section__sub reveal">
+          Posters impressos em papel de qualidade museológica. Escolha o tamanho, adicione ao
+          carrinho e finalize a encomenda em segundos por WhatsApp ou email.
+        </p>
+      </div>
+
+      <div class="products" id="products"></div>
+
+      <div class="shop__note reveal">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8v5m0 3h.01M12 3l9 16H3L12 3Z" stroke-linejoin="round" stroke-linecap="round"/></svg>
+        Procura outro tamanho ou uma fotografia específica em poster?
+        <a href="#contacto">Fale comigo</a>.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LIVRO DE FOTOGRAFIA (PRÉ-VENDA) ============ -->
+  <section class="album section" id="album">
+    <div class="album__bg"></div>
+    <div class="album__overlay"></div>
+    <div class="container album__grid">
+
+      <!-- Maqueta 3D do livro -->
+      <div class="album__visual reveal" id="bookStage">
+        <div class="book">
+          <div class="book__cover">
+            <span class="book__brand">Fotografia Joaquim Oliveira</span>
+            <span class="book__title">A Luz<br>Certa</span>
+            <span class="book__edition">Edição Limitada · 2026</span>
+          </div>
+        </div>
+        <span class="album__seal">Numerada<b>1 / 500</b>&amp; assinada</span>
+      </div>
+
+      <!-- Detalhes + reserva -->
+      <div class="album__content reveal">
+        <p class="eyebrow eyebrow--light">Em breve · Pré-venda</p>
+        <h2 class="section__title section__title--light">O Livro de Fotografia</h2>
+        <p class="album__lead">
+          Uma década de trabalho reunida num só volume — paisagens, retratos e
+          instantes, impressos para durar. Um objeto de coleção, feito à mão.
+        </p>
+        <ul class="album__specs">
+          <li>± 160 páginas em papel fine-art</li>
+          <li>Capa rígida em tela, com gravação a ouro</li>
+          <li>30 × 30 cm — formato de coleção</li>
+          <li>Edição limitada, numerada e assinada</li>
+        </ul>
+        <form class="album__form" id="albumForm" novalidate>
+          <input type="email" id="albumEmail" placeholder="O seu email" required aria-label="O seu email" />
+          <button type="submit" class="btn btn--solid">Reservar exemplar</button>
+        </form>
+        <p class="album__reassure">
+          Reserva gratuita e sem compromisso. Avisamos no lançamento, com
+          <b>−20% exclusivo de pré-venda</b>.
+        </p>
+        <p class="album__feedback" id="albumFeedback" role="status"></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="contact section" id="contacto">
+    <div class="container contact__grid">
+      <div class="contact__info">
+        <p class="eyebrow reveal">Contacto</p>
+        <h2 class="section__title reveal">Dúvidas ou<br>encomendas?</h2>
+        <p class="reveal">Posters em tamanho personalizado, questões sobre o livro ou o estado da sua encomenda — envie mensagem.</p>
+
+        <ul class="contact__list reveal">
+          <li>
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+            <a id="contactEmail" href="#">email</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-5.2-7-11a7 7 0 1 1 14 0c0 5.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <span id="contactLocation">Portugal</span>
+          </li>
+          <li class="contact__socials">
+            <a id="linkFacebook" href="#" target="_blank" rel="noopener">Facebook</a>
+            <a id="linkInstagram" href="#" target="_blank" rel="noopener">Instagram</a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact__form reveal" id="contactForm" novalidate>
+        <div class="field">
+          <input type="text" id="cfName" required placeholder=" " />
+          <label for="cfName">Nome</label>
+        </div>
+        <div class="field">
+          <input type="email" id="cfEmail" required placeholder=" " />
+          <label for="cfEmail">Email</label>
+        </div>
+        <div class="field">
+          <textarea id="cfMsg" rows="4" required placeholder=" "></textarea>
+          <label for="cfMsg">Mensagem</label>
+        </div>
+        <button type="submit" class="btn btn--dark btn--full">Enviar mensagem</button>
+        <button type="button" class="btn btn--whatsapp btn--full" id="cfWhats">
+          Falar por WhatsApp
+        </button>
+        <p class="contact__feedback" id="contactFeedback" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark">JO</span>
+        <div>
+          <strong>Fotografia Joaquim Oliveira</strong>
+          <small id="footerTag">A luz certa, o instante exato.</small>
+        </div>
+      </div>
+      <nav class="footer__nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#portfolio">Galeria</a>
+        <a href="#loja">Posters</a>
+        <a href="#album">Livro</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> Joaquim Oliveira · Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <!-- ============ BOTÃO VOLTAR AO TOPO ============ -->
+  <button class="to-top" id="toTop" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 14 6-6 6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Visualizar e comprar poster">
+    <button class="lightbox__close" id="lbClose" aria-label="Fechar">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Anterior">&#8249;</button>
+    <div class="lightbox__stage">
+      <figure class="lightbox__figure">
+        <img id="lbImg" src="" alt="" />
+      </figure>
+      <aside class="lightbox__panel">
+        <p class="lightbox__eyebrow">Poster</p>
+        <h3 class="lightbox__title" id="lbTitle"></h3>
+        <p class="lightbox__meta" id="lbMeta"></p>
+        <label class="lightbox__label" for="lbSize">Escolha o tamanho</label>
+        <select class="lightbox__size" id="lbSize" aria-label="Tamanho do poster"></select>
+        <div class="lightbox__price" id="lbPrice"></div>
+        <button class="btn btn--solid btn--full" id="lbAdd">Adicionar ao carrinho</button>
+        <p class="lightbox__note">Impressão em papel de qualidade museológica. Envio para todo o país.</p>
+      </aside>
+    </div>
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Seguinte">&#8250;</button>
+  </div>
+
+  <!-- ============ CARRINHO (DRAWER) ============ -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart" id="cart" aria-label="Carrinho de compras">
+    <div class="cart__head">
+      <h3>O seu carrinho</h3>
+      <button class="cart__close" id="cartClose" aria-label="Fechar carrinho">&times;</button>
+    </div>
+    <div class="cart__body" id="cartBody"></div>
+    <div class="cart__foot">
+      <div class="cart__total">
+        <span>Total</span>
+        <strong id="cartTotal">€0</strong>
+      </div>
+      <p class="cart__hint">Pagamento e envio combinados na finalização.</p>
+      <button class="btn btn--whatsapp btn--full" id="checkoutWhats">Finalizar por WhatsApp</button>
+      <button class="btn btn--dark btn--full" id="checkoutEmail">Finalizar por Email</button>
+    </div>
+  </aside>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

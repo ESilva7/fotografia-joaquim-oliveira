@@ -1,0 +1,9 @@
+# Sistema operativo / editores
+.DS_Store
+Thumbs.db
+*.log
+
+# Ferramentas locais
+.vercel
+node_modules/
+.claude/

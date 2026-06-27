@@ -48,22 +48,19 @@ Abra **`js/data.js`** — é o único ficheiro que precisa de editar. Lá pode m
 
 ---
 
-## 🖼️ Como colocar as fotos reais do Joaquim
+## 🖼️ Fotografias
 
-As imagens atuais em `assets/images/` são **temporárias** (placeholders), porque as fotos do
-Facebook estão protegidas e não podem ser descarregadas automaticamente.
+As fotografias reais já estão em `assets/images/` (Porto, costa, céu e natureza). Pontos-chave:
 
-Para usar as fotos verdadeiras:
+- **Foto principal (atrás do título):** `portonoturno.jpg` — definida em `css/style.css` (`.hero__bg`).
+- **Secção "Sobre":** `porsol.jpg` — em `index.html` (`<img>` dentro de `.about__media`).
+- **Livro de fotografia:** capa `ribeira.jpg` e fundo `porto.jpg` — em `css/style.css`.
+- **Galeria e loja:** todas as fotos estão listadas em `js/data.js` (arrays `GALLERY` e `PRODUCTS`),
+  cada uma com `title`, `category` e `ratio` (proporção largura/altura).
 
-1. Guarde as melhores fotos a partir do Facebook (botão direito → *Guardar imagem como…*).
-2. Copie-as para a pasta `assets/images/`.
-3. **Forma mais simples:** dê-lhes os mesmos nomes dos ficheiros atuais
-   (`portrait-01.jpg`, `nature-01.jpg`, `hero.jpg`, `about.jpg`, etc.) e substitua —
-   o site mostra-as automaticamente, sem mexer no código.
-4. Em alternativa, edite os caminhos `src` no array `GALLERY` (e `image` em `PRODUCTS`) dentro de `js/data.js`.
-
-**Dicas de qualidade:** use imagens grandes (lado maior ≥ 1600 px). A `hero.jpg` deve ser
-horizontal e impactante; a `about.jpg` de preferência vertical (retrato do fotógrafo).
+**Para trocar ou acrescentar fotos:** copie o ficheiro para `assets/images/` e edite o caminho
+`src` (galeria) ou `image` (loja) em `js/data.js`. Use imagens grandes (lado maior ≥ 1600 px)
+e ajuste o `ratio` à proporção real para a galeria reservar o espaço certo.
 
 ---
 

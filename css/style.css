@@ -161,7 +161,7 @@ ul{list-style:none}
    ========================================================================= */
 .hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden}
 .hero__bg{
-  position:absolute;inset:-8% 0;background:url("../assets/images/hero.jpg") center/cover no-repeat;
+  position:absolute;inset:-8% 0;background:url("../assets/images/portonoturno.jpg") center/cover no-repeat;
   transform:scale(1.08);will-change:transform;
 }
 .hero__overlay{
@@ -314,7 +314,7 @@ ul{list-style:none}
    ÁLBUM (EM BREVE)
    ========================================================================= */
 .album{position:relative;padding:clamp(5.5rem,12vw,9rem) 0;overflow:hidden}
-.album__bg{position:absolute;inset:0;background:url("../assets/images/album.jpg") center/cover fixed no-repeat;filter:blur(2px) brightness(.7);transform:scale(1.06)}
+.album__bg{position:absolute;inset:0;background:url("../assets/images/porto.jpg") center/cover fixed no-repeat;filter:blur(2px) brightness(.7);transform:scale(1.06)}
 .album__overlay{position:absolute;inset:0;background:linear-gradient(120deg, rgba(20,17,15,.95), rgba(20,17,15,.8))}
 .album__grid{
   position:relative;z-index:2;color:var(--paper);
@@ -334,7 +334,7 @@ ul{list-style:none}
 .book__cover{
   position:relative;aspect-ratio:1/1.28;border-radius:2px 6px 6px 2px;
   background:linear-gradient(165deg, rgba(20,17,15,.1) 35%, rgba(20,17,15,.82)),
-             url("../assets/images/album.jpg") center/cover;
+             url("../assets/images/ribeira.jpg") center/cover;
   padding:1.7rem 1.5rem;display:flex;flex-direction:column;
   box-shadow:
     inset 3px 0 0 rgba(255,255,255,.22), inset -1px 0 8px rgba(0,0,0,.4),

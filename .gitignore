@@ -7,3 +7,6 @@ Thumbs.db
 .vercel
 node_modules/
 .claude/
+
+# Pasta de origem das fotos (já copiadas para assets/images/)
+fotos/

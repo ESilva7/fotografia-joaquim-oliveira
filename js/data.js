@@ -16,7 +16,7 @@ const SITE = {
   // Exemplo Portugal: 3519XXXXXXXX   |   Exemplo Brasil: 5511XXXXXXXXX
   whatsapp: "351900000000",
   email: "geral@fotografiajoaquimoliveira.pt",
-  location: "Portugal",
+  location: "Porto, Portugal",
   currency: "€",
   social: {
     facebook: "https://www.facebook.com/FotografiaJoaquimOliveira",
@@ -29,35 +29,40 @@ const SITE = {
    - category: usada nos filtros (deve coincidir com FILTERS abaixo)
    - src: caminho da imagem dentro de assets/images/
    - title / meta: texto que aparece no lightbox
+   - ratio: proporção (largura / altura) para a galeria reservar o espaço certo
    ------------------------------------------------------------------------- */
 const FILTERS = [
   { id: "todos",    label: "Todos" },
-  { id: "retratos", label: "Retratos" },
+  { id: "porto",    label: "Porto" },
+  { id: "mar",      label: "Mar & Costa" },
   { id: "natureza", label: "Natureza" },
-  { id: "urbano",   label: "Urbano" },
-  { id: "pb",       label: "Preto & Branco" },
+  { id: "ceu",      label: "Céu" },
 ];
 
-// ratio = proporção da foto (largura / altura), para a galeria reservar o espaço certo.
-// Use "5 / 7" para vertical, "7 / 5" para horizontal, "1 / 1" para quadrada.
 const GALLERY = [
-  { src: "assets/images/portrait-01.jpg", category: "retratos", title: "Olhar Sereno",     meta: "Retrato · luz natural",     ratio: "5 / 7" },
-  { src: "assets/images/nature-01.jpg",   category: "natureza", title: "Manhã no Vale",    meta: "Paisagem · nascer do sol",  ratio: "7 / 5" },
-  { src: "assets/images/urban-01.jpg",    category: "urbano",   title: "Linhas da Cidade", meta: "Urbano · arquitetura",      ratio: "7 / 5" },
-  { src: "assets/images/bw-01.jpg",       category: "pb",       title: "Contraste",        meta: "Preto & branco · estúdio",  ratio: "5 / 7" },
-  { src: "assets/images/portrait-02.jpg", category: "retratos", title: "Perfil",           meta: "Retrato · ambiente",        ratio: "5 / 7" },
-  { src: "assets/images/nature-02.jpg",   category: "natureza", title: "Horizonte",        meta: "Paisagem · costa",          ratio: "7 / 5" },
-  { src: "assets/images/detail-01.jpg",   category: "natureza", title: "Detalhe",          meta: "Macro · textura",           ratio: "1 / 1" },
-  { src: "assets/images/portrait-03.jpg", category: "retratos", title: "Luz de Janela",    meta: "Retrato · interior",        ratio: "5 / 7" },
-  { src: "assets/images/urban-02.jpg",    category: "urbano",   title: "Vertigem",         meta: "Urbano · perspetiva",       ratio: "5 / 7" },
-  { src: "assets/images/bw-02.jpg",       category: "pb",       title: "Silêncio",         meta: "Preto & branco · rua",      ratio: "7 / 5" },
-  { src: "assets/images/nature-03.jpg",   category: "natureza", title: "Bruma",            meta: "Paisagem · floresta",       ratio: "5 / 7" },
-  { src: "assets/images/portrait-04.jpg", category: "retratos", title: "Presença",         meta: "Retrato · estúdio",         ratio: "5 / 7" },
-  { src: "assets/images/detail-02.jpg",   category: "urbano",   title: "Fragmento",        meta: "Detalhe · geometria",       ratio: "1 / 1" },
+  { src: "assets/images/portonoturno.jpg",     category: "porto",    title: "Porto à Noite",       meta: "Porto · à noite",       ratio: "3 / 2"  },
+  { src: "assets/images/porto.jpg",            category: "porto",    title: "O Porto",             meta: "Porto · skyline",       ratio: "8 / 5"  },
+  { src: "assets/images/ribeira.jpg",          category: "porto",    title: "Ribeira",             meta: "Porto · beira-rio",     ratio: "3 / 4"  },
+  { src: "assets/images/rebelos.jpg",          category: "porto",    title: "Barcos Rabelos",      meta: "Douro · tradição",      ratio: "16 / 9" },
+  { src: "assets/images/sjoao.jpg",            category: "porto",    title: "Noite de São João",   meta: "Porto · festa",         ratio: "3 / 4"  },
+  { src: "assets/images/barco.jpg",            category: "mar",      title: "Mar Adentro",         meta: "Mar · barco",           ratio: "16 / 9" },
+  { src: "assets/images/farol_porsol.jpg",     category: "mar",      title: "Farol ao Entardecer", meta: "Costa · farol",         ratio: "16 / 9" },
+  { src: "assets/images/spedra.jpg",           category: "mar",      title: "Senhora da Pedra",    meta: "Costa · capela",        ratio: "4 / 5"  },
+  { src: "assets/images/spedraporsol.jpg",     category: "mar",      title: "Pedra Dourada",       meta: "Costa · pôr do sol",    ratio: "9 / 4"  },
+  { src: "assets/images/tempestadespedra.jpg", category: "mar",      title: "Tempestade",          meta: "Costa · tempestade",    ratio: "4 / 5"  },
+  { src: "assets/images/ave.jpg",              category: "natureza", title: "Em Voo",              meta: "Natureza · ave",        ratio: "4 / 5"  },
+  { src: "assets/images/borboleta.jpg",        category: "natureza", title: "Borboleta",           meta: "Natureza · macro",      ratio: "4 / 3"  },
+  { src: "assets/images/louvadeus.jpg",        category: "natureza", title: "Louva-a-Deus",        meta: "Natureza · macro",      ratio: "4 / 3"  },
+  { src: "assets/images/girassois.jpg",        category: "natureza", title: "Girassóis",           meta: "Natureza · verão",      ratio: "3 / 2"  },
+  { src: "assets/images/lua.jpg",              category: "ceu",      title: "Lua Cheia",           meta: "Céu · lua",             ratio: "3 / 4"  },
+  { src: "assets/images/lua2.jpg",             category: "ceu",      title: "Luar",                meta: "Céu · lua",             ratio: "3 / 4"  },
+  { src: "assets/images/luacrescente.jpg",     category: "ceu",      title: "Lua Crescente",       meta: "Céu · lua",             ratio: "3 / 4"  },
+  { src: "assets/images/porsol.jpg",           category: "ceu",      title: "Pôr do Sol",          meta: "Céu · entardecer",      ratio: "4 / 5"  },
+  { src: "assets/images/aviao.jpg",            category: "ceu",      title: "Rasto no Céu",        meta: "Céu · voo",             ratio: "4 / 5"  },
 ];
 
 /* -------------------------------------------------------------------------
-   3) LOJA — POSTERS À VENDA
+   3) LOJA — POSTERS À VENDA (em destaque)
    - Cada poster reaproveita uma foto e oferece vários tamanhos.
    - sizes: { label, price }  (preço em número, sem símbolo)
    ------------------------------------------------------------------------- */
@@ -71,49 +76,49 @@ const POSTER_SIZES = [
 const PRODUCTS = [
   {
     id: "p1",
-    name: "Olhar Sereno",
-    image: "assets/images/portrait-01.jpg",
-    desc: "Retrato em luz natural. Poster impresso em papel mate de alta qualidade.",
+    name: "Porto à Noite",
+    image: "assets/images/portonoturno.jpg",
+    desc: "A cidade e o rio refletidos ao cair da noite.",
     badge: "Mais procurado",
     sizes: POSTER_SIZES,
   },
   {
     id: "p2",
-    name: "Manhã no Vale",
-    image: "assets/images/nature-01.jpg",
-    desc: "Paisagem ao nascer do sol — poster de cores ricas e profundas.",
+    name: "O Porto",
+    image: "assets/images/porto.jpg",
+    desc: "A vista clássica sobre a cidade e o Douro.",
     badge: "",
     sizes: POSTER_SIZES,
   },
   {
     id: "p3",
-    name: "Contraste",
-    image: "assets/images/bw-01.jpg",
-    desc: "Estudo a preto e branco. Poster de alto contraste e textura.",
+    name: "Pôr do Sol na Pedra",
+    image: "assets/images/spedraporsol.jpg",
+    desc: "A capela da Senhora da Pedra ao entardecer.",
     badge: "Edição limitada",
     sizes: POSTER_SIZES,
   },
   {
     id: "p4",
-    name: "Linhas da Cidade",
-    image: "assets/images/urban-01.jpg",
-    desc: "Geometria urbana. Poster perfeito para espaços modernos.",
+    name: "Girassóis",
+    image: "assets/images/girassois.jpg",
+    desc: "Um campo dourado em plena luz de verão.",
     badge: "",
     sizes: POSTER_SIZES,
   },
   {
     id: "p5",
-    name: "Luz de Janela",
-    image: "assets/images/portrait-03.jpg",
-    desc: "Retrato intimista de luz suave. Poster para ambientes acolhedores.",
+    name: "Lua Cheia",
+    image: "assets/images/lua.jpg",
+    desc: "A lua em detalhe, suspensa no céu da noite.",
     badge: "",
     sizes: POSTER_SIZES,
   },
   {
     id: "p6",
-    name: "Horizonte",
-    image: "assets/images/nature-02.jpg",
-    desc: "Linha de costa ao entardecer. Poster panorâmico e sereno.",
+    name: "Ribeira",
+    image: "assets/images/ribeira.jpg",
+    desc: "As casas típicas à beira-rio, no coração do Porto.",
     badge: "Novo",
     sizes: POSTER_SIZES,
   },
